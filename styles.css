@@ -87,7 +87,7 @@ section {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     transition: all var(--transition-speed) ease;
 
     /* Premium artistic background with gradient and pattern */
@@ -162,9 +162,9 @@ section {
 .navbar-brand {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
     color: var(--color-white);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     font-family: var(--font-secondary);
     position: relative;
@@ -179,8 +179,8 @@ section {
 }
 
 .logo-img {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
     transition: all var(--transition-speed) ease;
     background: transparent;
@@ -943,16 +943,16 @@ section {
 
     /* Header */
     .header-main {
-        padding: 0.75rem 0;
+        padding: 1rem 0;
     }
 
     .navbar-brand {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .logo-img {
-        width: 45px;
-        height: 45px;
+        width: 90px;
+        height: 90px;
     }
 
     .header-contact {
@@ -1027,12 +1027,12 @@ section {
 
 @media (max-width: 576px) {
     .logo-img {
-        width: 40px;  
-        height: 40px;
+        width: 80px;
+        height: 80px;
     }
 
     .navbar-brand {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .logo-text {
