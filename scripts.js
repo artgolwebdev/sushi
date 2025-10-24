@@ -279,8 +279,14 @@ $(document).ready(function() {
             guests: $('#guests').val(),
             eventType: $('#eventType').val(),
             package: $('#package').val(),
+            services: [],
             notes: $('#notes').val().trim()
         };
+
+        // Collect selected services
+        $('input[name="services"]:checked').each(function() {
+            formData.services.push($(this).val());
+        });
 
         // Format date nicely
         const dateObj = new Date(formData.eventDate);
@@ -317,6 +323,17 @@ $(document).ready(function() {
                 'custom': 'מעוניין/ת בהצעה מותאמת אישית'
             };
             message += `📦 *חבילה:* ${packages[formData.package] || formData.package}\n`;
+        }
+
+        if (formData.services && formData.services.length > 0) {
+            const servicesMap = {
+                'barman': 'ברמן מקצועי',
+                'dj': 'DJ מנוסה',
+                'officiant': 'מלווה/ת אירוע',
+                'breakdancer': 'רקדן ברייקדאנס'
+            };
+            const selectedServices = formData.services.map(s => servicesMap[s] || s).join(', ');
+            message += `\n🎭 *שירותים נוספים:* ${selectedServices}\n`;
         }
 
         if (formData.notes) {
