@@ -359,14 +359,25 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('assets/hero-sushi.jpg'); /* Replace with actual image */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    overflow: hidden;
 }
 
 .hero-section.hero-short {
     min-height: 450px;
+}
+
+/* Video Background */
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    object-fit: cover;
 }
 
 .hero-overlay {
@@ -375,7 +386,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(11, 37, 69, 0.85), rgba(212, 175, 55, 0.3));
+    background: linear-gradient(135deg, rgba(11, 37, 69, 0.75), rgba(212, 175, 55, 0.25));
     z-index: 1;
 }
 
@@ -973,7 +984,12 @@ section {
     /* Hero */
     .hero-section {
         min-height: 500px;
-        background-attachment: scroll;
+    }
+
+    .hero-video {
+        /* On mobile, ensure video stays centered */
+        min-width: 100%;
+        min-height: 100%;
     }
 
     .hero-title {
