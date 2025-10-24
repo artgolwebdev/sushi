@@ -5,7 +5,11 @@
       "Bash(git remote add:*)",
       "Bash(git config:*)",
       "Bash(find:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Just Roll It - Premium Sushi Catering Website\n\nFeatures:\n- Multi-step interactive form with 3 steps\n- Real-time validation with visual feedback\n- WhatsApp integration for direct messaging\n- Fully responsive RTL Hebrew design\n- Premium business theme with smooth animations\n- Contact: +972-54-456-3570\n\nSections:\n- Hero with CTA\n- Advantages (4 cards)\n- Packages (Mini, Standard, Premium)\n- How It Works (3 steps)\n- Testimonials (3 reviews)\n- Multi-step contact form\n- Footer with contact info\n\nTech Stack:\n- HTML5, CSS3, Bootstrap 5, jQuery\n- Font Awesome icons\n- Google Fonts (Rubik, Alef)\nEOF\n)\")",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []

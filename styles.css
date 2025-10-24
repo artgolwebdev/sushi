@@ -110,6 +110,8 @@ section {
     height: 60px;
     object-fit: contain;
     transition: transform var(--transition-speed) ease;
+    background: transparent;
+    mix-blend-mode: multiply;
 }
 
 .navbar-brand:hover .logo-img {
@@ -120,6 +122,44 @@ section {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+}
+
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.lang-btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--color-border);
+    border-radius: 50%;
+    background-color: var(--color-white);
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.lang-btn:hover {
+    border-color: var(--color-gold);
+    transform: translateY(-2px);
+    box-shadow: var(--box-shadow);
+}
+
+.lang-btn.active {
+    border-color: var(--color-gold);
+    background-color: var(--color-gold);
+    transform: scale(1.1);
+}
+
+.flag-icon {
+    font-size: 1.5rem;
+    line-height: 1;
 }
 
 .phone-link {
@@ -879,7 +919,7 @@ section {
 
 @media (max-width: 576px) {
     .logo-img {
-        width: 40px;
+        width: 40px;  
         height: 40px;
     }
 
