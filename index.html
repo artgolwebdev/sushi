@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Just Roll It - קייטרינג סושי פרימיום לאירועים. מרכיבים טריים, שירות מקצועי, וטעימה לפני האירוע. הזמינו עכשיו!">
+    <title>Just Roll It - קייטרינג סושי פרימיום לאירועים</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts - Hebrew Support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=Alef:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-main" id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#" aria-label="Just Roll It - עמוד הבית">
+                        <img src="assets/logo.png" alt="Just Roll It לוגו" class="logo-img">
+                        <span class="logo-text">Just Roll It</span>
+                    </a>
+
+                    <!-- Contact Info -->
+                    <div class="header-contact">
+                        <a href="tel:+972544563570" class="phone-link" aria-label="התקשר אלינו">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>054-456-3570</span>
+                        </a>
+                        <a href="#contact" class="btn btn-cta" aria-label="השאר הזמנה">השאר/י הזמנה</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section - Extended Version -->
+        <!-- Use class "hero-short" for short version -->
+        <section class="hero-section" id="hero">
+            <div class="hero-overlay"></div>
+            <!-- Replace background image in CSS: background-image: url('assets/hero-sushi.jpg') -->
+            <div class="container hero-content">
+                <h1 class="hero-title">קייטרינג סושי פרימיום לאירועים שלכם</h1>
+                <p class="hero-subtitle">חוויה קולינרית יוצאת דופן עם מרכיבים טריים ושירות מקצועי</p>
+                <a href="#contact" class="btn btn-hero" aria-label="הזמינו עכשיו">הזמינו עכשיו</a>
+            </div>
+        </section>
+
+        <!-- Short Hero Version (commented out - uncomment to use) -->
+        <!--
+        <section class="hero-section hero-short" id="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title">סושי שמביא את האירוע לחיים</h1>
+                <a href="#contact" class="btn btn-hero" aria-label="הזמינו עכשיו">הזמינו עכשיו</a>
+            </div>
+        </section>
+        -->
+
+        <!-- Advantages Section -->
+        <section class="advantages-section" id="advantages">
+            <div class="container">
+                <h2 class="section-title">למה לבחור בנו?</h2>
+                <div class="row g-4">
+                    <!-- Advantage 1 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="advantage-card">
+                            <div class="advantage-icon">
+                                <i class="fas fa-fish"></i>
+                            </div>
+                            <h3 class="advantage-title">מרכיבים טריים</h3>
+                            <p class="advantage-text">אנו משתמשים רק בדגים ומרכיבים איכוtiים בדרגה הגבוהה ביותר</p>
+                        </div>
+                    </div>
+
+                    <!-- Advantage 2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="advantage-card">
+                            <div class="advantage-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h3 class="advantage-title">קייטרינג במקום</h3>
+                            <p class="advantage-text">הצוות המקצועי שלנו מגיע עם כל הציוד להכנה טרייה באירוע</p>
+                        </div>
+                    </div>
+
+                    <!-- Advantage 3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="advantage-card">
+                            <div class="advantage-icon">
+                                <i class="fas fa-thumbs-up"></i>
+                            </div>
+                            <h3 class="advantage-title">טעימה מראש</h3>
+                            <p class="advantage-text">אפשרות לטעימה לפני האירוע כדי להבטיח את שביעות הרצון המלאה</p>
+                        </div>
+                    </div>
+
+                    <!-- Advantage 4 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="advantage-card">
+                            <div class="advantage-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3 class="advantage-title">שנות ניסיון</h3>
+                            <p class="advantage-text">מעל 10 שנות ניסיון בהפקת אירועים ושמחות מכל הסוגים</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section class="packages-section" id="packages">
+            <div class="container">
+                <h2 class="section-title">חבילות האירועים שלנו</h2>
+                <p class="section-subtitle">בחרו את החבילה המתאימה לכם</p>
+
+                <div class="row g-4 mt-4">
+                    <!-- Package 1: Mini -->
+                    <div class="col-md-4">
+                        <div class="package-card">
+                            <div class="package-header">
+                                <h3 class="package-title">חבילת Mini</h3>
+                                <p class="package-subtitle">מושלם לאירועים קטנים</p>
+                            </div>
+                            <div class="package-price">
+                                <span class="price-amount">₪80</span>
+                                <span class="price-per">למנה</span>
+                            </div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> 24 יחידות סושי</li>
+                                <li><i class="fas fa-check"></i> 3 סוגי רולים שונים</li>
+                                <li><i class="fas fa-check"></i> סלט אצות וגזר</li>
+                                <li><i class="fas fa-check"></i> רטבים ותוספות</li>
+                                <li><i class="fas fa-check"></i> עד 30 מוזמנים</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-package" aria-label="הזמן חבילת Mini">הזמינו עכשיו</a>
+                        </div>
+                    </div>
+
+                    <!-- Package 2: Standard -->
+                    <div class="col-md-4">
+                        <div class="package-card featured">
+                            <div class="package-badge">הכי פופולרי</div>
+                            <div class="package-header">
+                                <h3 class="package-title">חבילת Standard</h3>
+                                <p class="package-subtitle">הבחירה המושלמת</p>
+                            </div>
+                            <div class="package-price">
+                                <span class="price-amount">₪120</span>
+                                <span class="price-per">למנה</span>
+                            </div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> 36 יחידות סושי</li>
+                                <li><i class="fas fa-check"></i> 5 סוגי רולים שונים</li>
+                                <li><i class="fas fa-check"></i> סשימי טרי</li>
+                                <li><i class="fas fa-check"></i> סלטים ותוספות</li>
+                                <li><i class="fas fa-check"></i> עד 60 מוזמנים</li>
+                                <li><i class="fas fa-check"></i> טעימה מוקדמת</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-package" aria-label="הזמן חבילת Standard">הזמינו עכשיו</a>
+                        </div>
+                    </div>
+
+                    <!-- Package 3: Premium -->
+                    <div class="col-md-4">
+                        <div class="package-card">
+                            <div class="package-header">
+                                <h3 class="package-title">חבילת Premium</h3>
+                                <p class="package-subtitle">חוויה יוקרתית מלאה</p>
+                            </div>
+                            <div class="package-price">
+                                <span class="price-amount">₪180</span>
+                                <span class="price-per">למנה</span>
+                            </div>
+                            <ul class="package-features">
+                                <li><i class="fas fa-check"></i> 48 יחידות סושי</li>
+                                <li><i class="fas fa-check"></i> 8 סוגי רולים שונים</li>
+                                <li><i class="fas fa-check"></i> סשימי ונגירי פרימיום</li>
+                                <li><i class="fas fa-check"></i> סלטים וסופס</li>
+                                <li><i class="fas fa-check"></i> הכנה חיה באירוע</li>
+                                <li><i class="fas fa-check"></i> טעימה מוקדמת</li>
+                                <li><i class="fas fa-check"></i> שף אישי באירוע</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-package" aria-label="הזמן חבילת Premium">הזמינו עכשיו</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works-section" id="how-it-works">
+            <div class="container">
+                <h2 class="section-title">איך זה עובד?</h2>
+                <p class="section-subtitle">שלושה שלבים פשוטים להזמנת הקייטרינג שלכם</p>
+
+                <div class="row g-4 mt-5">
+                    <!-- Step 1 -->
+                    <div class="col-md-4">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <div class="step-icon">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <h3 class="step-title">בחירת חבילה</h3>
+                            <p class="step-text">בחרו את החבילה המתאימה לאירוע שלכם ומלאו את הפרטים בטופס</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-md-4">
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <div class="step-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <h3 class="step-title">אישור ותיאום</h3>
+                            <p class="step-text">נציג שלנו יצור איתכם קשר לאישור הפרטים ותיאום מועד לטעימה</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-md-4">
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <div class="step-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h3 class="step-title">הכנה ואספקה</h3>
+                            <p class="step-text">נגיע לאירוע עם כל הציוד ונכין סושי טרי ואיכותי במקום</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <h2 class="section-title">מה הלקוחות שלנו אומרים</h2>
+
+                <div class="row g-4 mt-4">
+                    <!-- Testimonial 1 -->
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"הסושי היה טרי ומעולה! האורחים לא הפסיקו לשבח. השירות היה מקצועי ואדיב. ממליצה בחום!"</p>
+                            <div class="testimonial-author">
+                                <strong>שרה כהן</strong>
+                                <span>אירוע חברה</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"הזמנו לחתונה של הבת שלנו. ההכנה החיה במקום הוסיפה אווירה מיוחדת. פשוט מושלם!"</p>
+                            <div class="testimonial-author">
+                                <strong>משפחת לוי</strong>
+                                <span>חתונה</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"איכות ללא פשרות! הטעימה המוקדמת עזרה לנו לבחור בדיוק את מה שרצינו. תודה רבה!"</p>
+                            <div class="testimonial-author">
+                                <strong>דוד מזרחי</strong>
+                                <span>בר מצווה</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="section-title">השאירו פרטים ונחזור אליכם</h2>
+                        <p class="section-subtitle">מלאו את הטופס ונציג שלנו יצור איתכם קשר בהקדם</p>
+
+                        <!-- Form Progress Indicator -->
+                        <div class="form-progress-wrapper">
+                            <div class="form-progress">
+                                <div class="progress-step active" data-step="1">
+                                    <div class="progress-circle">1</div>
+                                    <span class="progress-label">פרטים אישיים</span>
+                                </div>
+                                <div class="progress-line"></div>
+                                <div class="progress-step" data-step="2">
+                                    <div class="progress-circle">2</div>
+                                    <span class="progress-label">פרטי האירוע</span>
+                                </div>
+                                <div class="progress-line"></div>
+                                <div class="progress-step" data-step="3">
+                                    <div class="progress-circle">3</div>
+                                    <span class="progress-label">פרטים נוספים</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Multi-Step Form -->
+                        <form id="contactForm" class="contact-form mt-4" novalidate>
+
+                            <!-- Step 1: Personal Information -->
+                            <div class="form-step active" data-step="1">
+                                <h3 class="step-heading">
+                                    <i class="fas fa-user"></i>
+                                    פרטים אישיים
+                                </h3>
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label for="fullName" class="form-label">שם מלא <span class="required">*</span></label>
+                                        <input type="text" class="form-control" id="fullName" name="fullName" required aria-required="true" autocomplete="name">
+                                        <div class="invalid-feedback">נא להזין שם מלא (לפחות 2 תווים)</div>
+                                        <div class="valid-feedback">
+                                            <i class="fas fa-check-circle"></i> נהדר!
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="phone" class="form-label">טלפון <span class="required">*</span></label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="054-456-3570" required aria-required="true" autocomplete="tel">
+                                        <div class="invalid-feedback">נא להזין מספר טלפון תקין</div>
+                                        <div class="valid-feedback">
+                                            <i class="fas fa-check-circle"></i> מספר תקין
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="button" class="btn btn-next" data-next="2">
+                                            המשך
+                                            <i class="fas fa-arrow-left"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Event Details -->
+                            <div class="form-step" data-step="2">
+                                <h3 class="step-heading">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    פרטי האירוע
+                                </h3>
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label for="eventDate" class="form-label">תאריך האירוע <span class="required">*</span></label>
+                                        <input type="date" class="form-control" id="eventDate" name="eventDate" required aria-required="true">
+                                        <div class="invalid-feedback">נא לבחור תאריך עתידי</div>
+                                        <div class="valid-feedback">
+                                            <i class="fas fa-check-circle"></i> תאריך מעולה!
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="guests" class="form-label">כמות מוזמנים <span class="required">*</span></label>
+                                        <input type="number" class="form-control" id="guests" name="guests" min="1" placeholder="למשל: 50" required aria-required="true">
+                                        <div class="invalid-feedback">נא להזין מספר מוזמנים (לפחות 1)</div>
+                                        <div class="valid-feedback">
+                                            <i class="fas fa-check-circle"></i> מצוין!
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="eventType" class="form-label">סוג האירוע</label>
+                                        <select class="form-control" id="eventType" name="eventType">
+                                            <option value="">בחר/י סוג אירוע...</option>
+                                            <option value="wedding">חתונה</option>
+                                            <option value="bar-mitzvah">בר/בת מצווה</option>
+                                            <option value="birthday">יום הולדת</option>
+                                            <option value="corporate">אירוע עסקי</option>
+                                            <option value="private">אירוע פרטי</option>
+                                            <option value="other">אחר</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <button type="button" class="btn btn-prev" data-prev="1">
+                                            <i class="fas fa-arrow-right"></i>
+                                            חזור
+                                        </button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button" class="btn btn-next" data-next="3">
+                                            המשך
+                                            <i class="fas fa-arrow-left"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Additional Details -->
+                            <div class="form-step" data-step="3">
+                                <h3 class="step-heading">
+                                    <i class="fas fa-clipboard"></i>
+                                    פרטים נוספים
+                                </h3>
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label for="package" class="form-label">בחירת חבילה</label>
+                                        <select class="form-control" id="package" name="package">
+                                            <option value="">בחר/י חבילה...</option>
+                                            <option value="mini">חבילת Mini - ₪80 למנה</option>
+                                            <option value="standard">חבילת Standard - ₪120 למנה (מומלץ)</option>
+                                            <option value="premium">חבילת Premium - ₪180 למנה</option>
+                                            <option value="custom">מעוניין/ת בהצעה מותאמת אישית</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="notes" class="form-label">הערות נוספות</label>
+                                        <textarea class="form-control" id="notes" name="notes" rows="4" placeholder="ספרו לנו על האירוע שלכם, העדפות מיוחדות, אלרגיות..."></textarea>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <button type="button" class="btn btn-prev" data-prev="2">
+                                            <i class="fas fa-arrow-right"></i>
+                                            חזור
+                                        </button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="submit" class="btn btn-submit">
+                                            <span class="btn-text">
+                                                <i class="fab fa-whatsapp"></i>
+                                                שלח בוואטסאפ
+                                            </span>
+                                            <span class="btn-loader" style="display: none;">
+                                                <i class="fas fa-spinner fa-spin"></i> שולח...
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+                        <!-- Success Message (hidden by default) -->
+                        <div id="successMessage" class="alert alert-success mt-4" style="display: none;" role="alert">
+                            <i class="fas fa-check-circle"></i>
+                            <strong>תודה רבה!</strong> פנייתכם התקבלה בהצלחה. נציג שלנו יצור איתכם קשר בקרוב.
+                        </div>
+
+                        <!-- Error Message (hidden by default) -->
+                        <div id="errorMessage" class="alert alert-danger mt-4" style="display: none;" role="alert">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <strong>אופס!</strong> משהו השתבש. אנא נסו שוב מאוחר יותר או צרו איתנו קשר טלפוני.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-main" id="footer">
+        <div class="container">
+            <div class="row g-4">
+                <!-- About -->
+                <div class="col-md-4">
+                    <h4 class="footer-title">Just Roll It</h4>
+                    <p class="footer-text">קייטרינג סושי פרימיום לאירועים מכל הסוגים. מרכיבים טריים, שירות מקצועי וחוויה קולינרית בלתי נשכחת.</p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4">
+                    <h4 class="footer-title">יצירת קשר</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> 054-456-3570</li>
+                        <li><i class="fas fa-envelope"></i> info@justrollit.co.il</li>
+                        <li><i class="fas fa-map-marker-alt"></i> רחוב הסושי 10, תל אביב</li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="col-md-4">
+                    <h4 class="footer-title">עקבו אחרינו</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Just Roll It. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
